@@ -1,0 +1,14 @@
+name: 'Download IAB CMP and Vendor list'
+description: 'fetch files from IAB periodically for local hosting or validation purposes'
+branding:
+  icon: 'alert-triangle'
+  color: 'gray-dark'
+
+inputs:
+  working-directory:
+    description: 'Working directory for the output'
+    required: false
+
+runs:
+  using: 'node20'
+  main: 'lib/index.js'
